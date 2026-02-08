@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardAction, CardDescription, CardContent }
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
-export default function Header({ title, description, isToday, hideActions, reflection }) {
+export default function Header({ title, description, isToday, hideActions, reflection }: { title: string, description: string, isToday?: boolean, hideActions?: boolean, reflection?: string }) {
     return (
         <Card className="mb-4">
             <CardHeader className="text-left">
